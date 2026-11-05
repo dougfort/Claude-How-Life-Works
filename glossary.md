@@ -1,10 +1,12 @@
 # How Life Works — Glossary
 
-Last updated: 2026-11-04 · Covers: Theme 0 diagnostic
+Last updated: 2026-11-05 · v2 · Covers: Theme 0 diagnostic, recall on membranes, A1 (DNA structure and copying)
 
 Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ball]** Ball's interpretive position · *(Tn)* theme where the term matters most
 
 ---
+
+**3′ end / 5′ end** — The two chemically different ends of a DNA or RNA strand, named after carbons in the sugar. The 5′ end has a free phosphate; the 3′ end has a free –OH. Every link in the backbone runs 3′-OH → 5′-phosphate, so a strand has a direction, like an arrow. New strands can grow only at the 3′ end ("synthesis runs 5′ → 3′"). [consensus] *(T0)*
 
 **Activation barrier (activation energy, ΔG‡)** — The energy hump a reaction must get over between starting molecules and products. Rate depends on it exponentially: k ∝ e^(−ΔG‡/k_BT). Enzymes lower it. *(T0)*
 
@@ -16,7 +18,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Anfinsen's principle** — A protein's amino-acid sequence determines its folded shape. [consensus] for many proteins, with caveats: some need chaperones, some never fold (see intrinsically disordered protein). *(T0, T2)*
 
-**Antiparallel** — The two strands of DNA run in opposite chemical directions (labeled 5′→3′ and 3′→5′). *(T0)*
+**Antiparallel** — The two strands of DNA run in opposite chemical directions (labeled 5′→3′ and 3′→5′). Combined with polymerase's one-direction rule, this is what forces a lagging strand. *(T0)*
 
 **Archaea** — One of the two groups of prokaryotes (the other is bacteria). Look like bacteria but are a distinct lineage; eukaryotes likely arose from an archaeal host. *(T0)*
 
@@ -27,6 +29,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 **Bacteria** — Prokaryotes; single cells with no nucleus, typically 1–2 µm. *(T0)*
 
 **Base pairing (complementary)** — A pairs with T (U in RNA), G pairs with C. Each DNA strand therefore determines the other, which is the basis of copying. *(T0)*
+
+**Born energy** — The energy cost of moving a charged ion from water into a low-dielectric medium such as a membrane's oily core: ΔG ≈ (q²/8πε₀a)(1/ε_core − 1/ε_water), with ε_water ≈ 80 and ε_core ≈ 2. Large enough to keep small ions out of the bilayer. [consensus] *(T0)*
 
 **Brown fat** — Tissue that deliberately leaks protons across mitochondrial membranes (via the protein thermogenin) to turn food energy into heat. *(T0)*
 
@@ -44,9 +48,17 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Cytoskeleton** — The internal protein scaffolding of eukaryotic cells; gives shape and carries out active transport. *(T0)*
 
+**Desolvation** — Stripping an ion's shell of oriented water molecules. The main reason ions can't cross a lipid bilayer: nothing in the oily core can replace the shell's stabilization (see Born energy, hydration shell). *(T0)*
+
+**Dielectric constant (ε)** — How strongly a medium screens electric charge. Water ≈ 80 (screens strongly); hydrocarbon ≈ 2 (barely screens). *(T0)*
+
 **Diffusion** — Random thermal motion of molecules. Time to cover distance L scales as t ~ L²/(2dD) (d = dimensions, D = diffusion coefficient): fast over nanometers, hopeless over centimeters. *(T0, T3)*
 
 **DNA** — Deoxyribonucleic acid. A double-stranded helical polymer of nucleotides; stores hereditary sequence. 2 bits per base pair; human genome ≈ 3.1 × 10⁹ bp. *(T0)*
+
+**DNA ligase** — Enzyme that seals the gaps between Okazaki fragments, joining them into one continuous strand. *(T0)*
+
+**DNA polymerase** — Enzyme that builds a new DNA strand complementary to a template. Can only add to an existing 3′ end, so it needs a primer to start and builds only 5′ → 3′. Most also proofread. *(T0)*
 
 **Electron transport chain** — Membrane proteins in mitochondria that pass electrons from food molecules to oxygen, using the energy to pump protons across the membrane. *(T0)*
 
@@ -64,6 +76,10 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Glycolysis** — First stage of breaking down glucose, in the cytoplasm; yields a little ATP without oxygen. *(T0)*
 
+**Helicase** — Enzyme that unzips the DNA double helix ahead of copying, opening the replication fork. *(T0)*
+
+**Hydration shell** — The layer of water molecules that surrounds a dissolved ion, oriented toward its charge. Strongly stabilizes the ion. *(T0)*
+
 **Hydrophilic / hydrophobic** — "Water-loving" (polar or charged; interacts favorably with water) / "water-fearing" (nonpolar). About interaction, not chemical reaction. *(T0)*
 
 **Hydrophobic effect** — Nonpolar molecules cluster in water mainly because it frees water molecules from ordered cages — an entropy gain. Drives membrane formation and protein folding. *(T0)*
@@ -74,9 +90,13 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Intron** — Part of a gene's RNA that is cut out during splicing. *(T0, T1)*
 
-**Kinetic proofreading** — Hopfield (1974). Copying machinery spends energy to recheck and reject errors, reaching accuracy far beyond what binding energies alone allow (DNA copying ~1 error per 10⁹ bp). *(T0, T3)*
+**Kinetic proofreading** — Hopfield (1974). Copying machinery spends energy to recheck and reject errors, reaching accuracy beyond what binding energies allow. Equilibrium error f₀ ≈ e^(−ΔΔG/k_BT); n energy-consuming discrimination steps give roughly f₀ⁿ. Accuracy beyond the equilibrium limit costs energy (DNA copying ~1 error per 10⁹ bp). *(T0, T3)*
 
-**Lipid bilayer** — Two sheets of phospholipids, tails inward, heads facing water on both sides. Self-assembles. Nearly impermeable to ions because they'd have to enter the nonpolar core. *(T0)*
+**Lagging strand** — The new DNA strand whose growing 3′ end points away from the replication fork. It can't follow the fork, so it is made in backward pieces (Okazaki fragments). Cause: polymerase's 5′ → 3′ rule plus antiparallel strands — not "waiting for exposed template," which both strands do. [consensus] *(T0)*
+
+**Leading strand** — The new DNA strand whose growing 3′ end points toward the replication fork, so it is made continuously as the fork opens. [consensus] *(T0)*
+
+**Lipid bilayer** — Two sheets of phospholipids, tails inward, heads facing water on both sides. Self-assembles. Nearly impermeable to ions because they'd have to lose their hydration shell to enter the nonpolar core (see Born energy). *(T0)*
 
 **Lock and key** — Fischer's picture of enzyme specificity: rigid complementary shapes. Superseded in part by induced fit; Ball argues recognition is looser still [Ball]. *(T0, T2)*
 
@@ -88,6 +108,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Michaelis–Menten kinetics** — Standard model of enzyme rate: v = V_max[S] / (K_M + [S]). Rises with substrate, then saturates. *(T0, T3)*
 
+**Mismatch repair** — Enzymes that scan newly copied DNA and fix mispaired bases the polymerase missed. The third layer of copying accuracy. *(T0)*
+
 **Mitochondrion** — Eukaryotic organelle, descended from a bacterium, where most ATP is made via chemiosmosis. Lane argues mitochondria made complex cells possible by vastly raising energy per gene [research]. *(T0)*
 
 **Non-coding RNA** — RNA that functions as RNA and is never translated: tRNA, ribosomal RNA, microRNAs, long non-coding RNAs. *(T1)*
@@ -96,17 +118,27 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Nucleus** — Membrane-bound compartment holding a eukaryote's DNA. Separates transcription from translation, enabling RNA processing. *(T0)*
 
+**Okazaki fragment** — One of the short pieces in which the lagging strand is made; later joined by DNA ligase. *(T0)*
+
 **Phospholipid** — Membrane molecule with a charged/polar head and two hydrocarbon tails. *(T0)*
 
 **Pre-mRNA** — The raw RNA transcript before splicing and capping. *(T0)*
+
+**Primer** — Short RNA stretch that gives DNA polymerase a 3′ end to start from (polymerase can't start a strand from nothing). Later replaced by DNA. *(T0)*
 
 **Prokaryote** — Cell with no nucleus: bacteria and archaea. *(T0)*
 
 **Promoter** — DNA region where RNA polymerase binds to start transcription. *(T0, T1)*
 
+**Proofreading (polymerase)** — DNA polymerase backs up and cuts out a wrongly added base before continuing. Works because the chain's tip carries no energy supply, so removing a base leaves an ordinary 3′ end that can still extend. *(T0)*
+
 **Protein** — A chain of amino acids that folds into a functional shape. *(T0)*
 
-**Proton gradient (proton-motive force)** — Difference in proton concentration and voltage across a membrane (~150–200 mV across ~5 nm in mitochondria). Powers ATP synthase. *(T0)*
+**Proton gradient (proton-motive force)** — Difference in proton concentration and voltage across a membrane (~150–200 mV across ~5 nm in mitochondria); in mitochondria the voltage is the larger part. Powers ATP synthase. *(T0)*
+
+**Replication fork** — The Y-shaped region where the double helix is being unzipped and both strands copied. *(T0)*
+
+**Reverse complement** — A DNA strand's partner sequence: read the strand backward and swap each base (A↔T, G↔C). Follows from antiparallel pairing. *(T0)*
 
 **Ribosome** — Large RNA–protein machine that translates mRNA into protein. Its catalytic core is RNA (a ribozyme). *(T0)*
 

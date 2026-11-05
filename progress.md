@@ -1,6 +1,6 @@
 # How Life Works — Progress Log
 
-Last updated: 2026-11-04
+Last updated: 2026-11-05
 
 **How to use:** Start any session with "where were we?" Claude reads this log, gives one recall question from the last unit, and picks up at **Next up**. Sessions are short, one unit each; stopping mid-unit is fine.
 
@@ -9,15 +9,15 @@ Last updated: 2026-11-04
 ## Where we are
 
 - **Current theme:** Theme 0 — The standard picture
-- **Next up:** A1 — DNA structure and copying (brief review; partly covered in the diagnostic)
-- **Last recall prompt to use:** "Why does a lipid bilayer block ions, and why does that matter for making ATP?"
+- **Next up:** Finish A1. Firm up *why* the lagging strand exists, then move to A2 (Transcription).
+- **Last recall prompt to use:** "Why does one new strand have to be made in pieces?" (Target answer: polymerase only extends 3′ ends + the strands are antiparallel → one new strand necessarily points away from the fork.)
 
 ## Theme 0 units
 
 Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 
 ### Block A — Information: DNA → protein
-- ◐ A1. DNA structure and copying (base pairing, semiconservative replication, proofreading)
+- ◐ A1. DNA structure and copying (base pairing, semiconservative replication, proofreading). Facts covered 2026-11-05; causal "why" of leading/lagging strands not yet solid.
 - ☐ A2. Transcription (RNA polymerase, promoters, transcription factors)
 - ☐ A3. RNA processing (splicing, introns/exons, alternative splicing)
 - ☐ A4. The genetic code and translation (codons, tRNA, ribosome)
@@ -35,7 +35,7 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 - ◐ C1. Scale and numbers (sizes, counts, timescales)
 - ☐ C2. Diffusion and random walks
 - ☐ C3. Crowding: what the inside of a cell is really like
-- ◐ C4. Membranes and transport (bilayers, channels, pumps)
+- ◐ C4. Membranes and transport (bilayers, channels, pumps). Bilayer impermeability now correct (desolvation, Born energy); channels and pumps not yet covered.
 - ☐ C5. Compartments and the cytoskeleton (prokaryote vs eukaryote)
 
 ### Theme 0 wrap-up
@@ -55,9 +55,11 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 | 8 | Scale and speed | Size off by >10× (protein vs cell ≈ 4,000×); speed matched median enzyme only |
 
 **Patterns to watch:**
-- Answers name the thing but skip the "why."
+- Answers name the thing but skip the "why." (Recurred 2026-11-05: described what the lagging strand does, but not why.)
 - Standard biology sometimes attributed to Ball.
 - Mechanistic, physical reasoning is a strength.
+- Spatial questions posed only in words don't land. Draw first, then ask. Fog can say "draw it" at any time.
+- When stuck on a "why," smaller checks (yes/no, one-step) work better than open "explain in a sentence" prompts.
 
 ## Open questions
 
@@ -68,8 +70,10 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 ## Session log
 
 - **2026-11-03 to 11-04** — Theme 0 diagnostic, 8 questions plus checks. Set session format: short, irregular sessions, no numerical computation in checks. Started glossary (v1, 61 terms) and this log.
+- **2026-11-05** — Recall (membranes): correct, right mechanism this time (loss of water shell). Added Born-energy formalization and the voltage part of the proton-motive force. Started A1: DNA structure, replication, accuracy and Hopfield proofreading; 5′/3′ directionality; leading vs lagging strands with an interactive fork diagram. Checks: "no lagging strand if strands were parallel" ✓; causal reason ✗ (attributed lag to waiting for exposed template, not to direction). A1 stays ◐. Session notes: `sessions/2026-11-05-A1-dna-copying.md`.
 
 ## Files
 
 - `glossary.md` — running glossary (v1, 2026-11-04)
 - `progress.md` — this file
+- `sessions/2026-11-05-A1-dna-copying.md` — notes from the 2026-11-05 session
