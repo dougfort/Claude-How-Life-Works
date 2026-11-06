@@ -1,6 +1,6 @@
 # How Life Works — Progress Log
 
-Last updated: 2026-11-05
+Last updated: 2026-11-06
 
 **How to use:** Start any session with "where were we?" Claude reads this log, gives one recall question from the last unit, and picks up at **Next up**. Sessions are short, one unit each; stopping mid-unit is fine.
 
@@ -9,16 +9,16 @@ Last updated: 2026-11-05
 ## Where we are
 
 - **Current theme:** Theme 0 — The standard picture
-- **Next up:** Finish A1. Firm up *why* the lagging strand exists, then move to A2 (Transcription).
-- **Last recall prompt to use:** "Why does one new strand have to be made in pieces?" (Target answer: polymerase only extends 3′ ends + the strands are antiparallel → one new strand necessarily points away from the fork.)
+- **Next up:** A2 chunk 3: transcription factors (how proteins bound near a promoter switch genes on and off; first math: binding occupancy).
+- **Last recall prompt to use:** "Transcription opens both DNA strands. Why is there no lagging-strand problem?" (Target answer: only one strand is read, and the promoter sets the direction so the template is the strand whose RNA grows with its 3′ end facing the polymerase's travel; the other strand is ignored. Watch the word: it *opens* both strands, *reads* one.)
 
 ## Theme 0 units
 
 Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 
 ### Block A — Information: DNA → protein
-- ◐ A1. DNA structure and copying (base pairing, semiconservative replication, proofreading). Facts covered 2026-11-05; causal "why" of leading/lagging strands not yet solid.
-- ☐ A2. Transcription (RNA polymerase, promoters, transcription factors)
+- ☑ A1. DNA structure and copying (base pairing, semiconservative replication, proofreading). Completed 2026-11-06: full causal chain for leading/lagging strands stated correctly.
+- ◐ A2. Transcription (RNA polymerase, promoters, transcription factors). Chunks 1–2 done 2026-11-06 (polymerase, template vs coding strand, bubble, promoters); chunk 3 (transcription factors) next.
 - ☐ A3. RNA processing (splicing, introns/exons, alternative splicing)
 - ☐ A4. The genetic code and translation (codons, tRNA, ribosome)
 - ☐ A5. Protein folding and shape (side chains, Anfinsen, chaperones)
@@ -59,7 +59,7 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 - Standard biology sometimes attributed to Ball.
 - Mechanistic, physical reasoning is a strength.
 - Spatial questions posed only in words don't land. Draw first, then ask. Fog can say "draw it" at any time.
-- When stuck on a "why," smaller checks (yes/no, one-step) work better than open "explain in a sentence" prompts.
+- When stuck on a "why," smaller checks (yes/no, one-step) work better than open "explain in a sentence" prompts. Confirmed 2026-11-06: diagram + two one-step checks + fill-in-the-blank sentence got the full causal chain.
 
 ## Open questions
 
@@ -71,9 +71,11 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 
 - **2026-11-03 to 11-04** — Theme 0 diagnostic, 8 questions plus checks. Set session format: short, irregular sessions, no numerical computation in checks. Started glossary (v1, 61 terms) and this log.
 - **2026-11-05** — Recall (membranes): correct, right mechanism this time (loss of water shell). Added Born-energy formalization and the voltage part of the proton-motive force. Started A1: DNA structure, replication, accuracy and Hopfield proofreading; 5′/3′ directionality; leading vs lagging strands with an interactive fork diagram. Checks: "no lagging strand if strands were parallel" ✓; causal reason ✗ (attributed lag to waiting for exposed template, not to direction). A1 stays ◐. Session notes: `sessions/2026-11-05-A1-dna-copying.md`.
+- **2026-11-06** — Recall (lagging strand): first answer named "growing away from the fork" but still gave waiting as the cause. Static fork diagram, then one-step checks: 3′ end of new bottom piece is away from the fork ✓; it can only grow away from the fork ✓. Fill-in-the-blank: 3′ end only + antiparallel → growing end points away → can't extend into new template → segmented ✓. A1 ☑.
+- **2026-11-06 (later)** — Started A2. Covered: RNA polymerase reads one strand 5′→3′, template vs coding strand, small bubble not a fork, no primer, higher error rate and why that's tolerable; promoters set start and direction (sigma factor in bacteria; general transcription factors + Pol II in eukaryotes). Bubble diagram. Checks: "no lagging problem because it only opens one strand" — idea right, word wrong (opens both, reads one); one-step: RNA templated on the wrong strand would have 3′ end facing away ✓. New glossary terms pending at end of A2: template strand, coding strand, transcription bubble, sigma factor, general transcription factors, RNA polymerase II, TATA box.
 
 ## Files
 
-- `glossary.md` — running glossary (v1, 2026-11-04)
+- `glossary.md` — running glossary (v2, 2026-11-05)
 - `progress.md` — this file
 - `sessions/2026-11-05-A1-dna-copying.md` — notes from the 2026-11-05 session
