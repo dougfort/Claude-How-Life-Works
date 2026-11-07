@@ -1,6 +1,6 @@
 # How Life Works — Glossary
 
-Last updated: 2026-11-05 · v2 · Covers: Theme 0 diagnostic, recall on membranes, A1 (DNA structure and copying)
+Last updated: 2026-11-07 · v3 · Covers: Theme 0 diagnostic, recall on membranes, A1 (DNA structure and copying), A2 (transcription)
 
 Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ball]** Ball's interpretive position · *(Tn)* theme where the term matters most
 
@@ -9,6 +9,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 **3′ end / 5′ end** — The two chemically different ends of a DNA or RNA strand, named after carbons in the sugar. The 5′ end has a free phosphate; the 3′ end has a free –OH. Every link in the backbone runs 3′-OH → 5′-phosphate, so a strand has a direction, like an arrow. New strands can grow only at the 3′ end ("synthesis runs 5′ → 3′"). [consensus] *(T0)*
 
 **Activation barrier (activation energy, ΔG‡)** — The energy hump a reaction must get over between starting molecules and products. Rate depends on it exponentially: k ∝ e^(−ΔG‡/k_BT). Enzymes lower it. *(T0)*
+
+**Activator** — A regulatory transcription factor that increases how often transcription starts, mainly by helping RNA polymerase land and stay on the promoter. [consensus] *(T0, T1)*
 
 **Active site** — The pocket in a folded enzyme whose shape and chemistry fit a particular substrate; where catalysis happens. *(T0, T2)*
 
@@ -42,7 +44,11 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Chemiosmosis** — Making ATP using a proton gradient across a membrane. Mitchell, 1961; ridiculed, then Nobel 1978. [consensus] Used by essentially all life. *(T0)*
 
+**Coding strand** — The DNA strand *not* read during transcription. Its sequence matches the RNA's (with T in place of U), which is why gene sequences are conventionally written as the coding strand. [consensus] *(T0)*
+
 **Codon** — Three consecutive letters of mRNA, read by the ribosome as one unit. 4³ = 64 codons. *(T0)*
+
+**Cooperative binding** — Binding of one molecule makes binding of the next more likely (e.g. transcription factors that touch each other on adjacent sites). Turns the soft occupancy curve into a steep switch (see Hill function). [consensus] *(T0, T3)*
 
 **Cytoplasm** — The cell's interior outside the nucleus; crowded, not a dilute soup. *(T0)*
 
@@ -54,6 +60,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Diffusion** — Random thermal motion of molecules. Time to cover distance L scales as t ~ L²/(2dD) (d = dimensions, D = diffusion coefficient): fast over nanometers, hopeless over centimeters. *(T0, T3)*
 
+**Dissociation constant (K_d)** — For T + site ⇌ T·site: K_d = [T][site]/[T·site] = k_off/k_on. It is a concentration: the one at which the site is half occupied. Small K_d = tight binding, mainly because the bound molecule falls off slowly, so fewer molecules are needed to keep the site covered. [consensus] *(T0, T3)*
+
 **DNA** — Deoxyribonucleic acid. A double-stranded helical polymer of nucleotides; stores hereditary sequence. 2 bits per base pair; human genome ≈ 3.1 × 10⁹ bp. *(T0)*
 
 **DNA ligase** — Enzyme that seals the gaps between Okazaki fragments, joining them into one continuous strand. *(T0)*
@@ -64,6 +72,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Endosymbiosis** — One cell living inside another. Mitochondria descend from engulfed bacteria. [consensus] *(T0)*
 
+**Enhancer** — In eukaryotes, a DNA region bound by activators that can lie thousands of base pairs from the gene it controls; the DNA loops so the bound activators reach the promoter. [consensus] *(T0, T1)*
+
 **Enzyme** — A biological catalyst, usually a protein (sometimes RNA — see ribozyme). Rate enhancements ~10⁶ to ~10¹⁷. *(T0)*
 
 **Eukaryote** — Cell with a nucleus and internal membrane compartments (animals, plants, fungi, protists). Typically 10–30 µm. *(T0)*
@@ -72,11 +82,15 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Gene** — No single agreed definition. Molecular sense: a stretch of DNA that is transcribed into a functional product. Evolutionary sense: a unit inherited and selected over generations (Dawkins' usage). "A sequence that codes for a protein" is inaccurate: misses non-coding genes, alternative splicing, and regulatory DNA. [consensus that the simple definition fails] *(T1)*
 
+**General transcription factors** — In eukaryotes, the set of proteins needed at essentially every RNA polymerase II promoter to position the polymerase and open the DNA (TFIID, TFIIB and others). Contrast regulatory transcription factors, which vary gene to gene. [consensus] *(T0)*
+
 **Genetic code** — The many-to-one map from 64 codons to 20 amino acids plus stop. Redundant, and arranged so single-letter errors are often harmless. *(T0, T5)*
 
 **Glycolysis** — First stage of breaking down glucose, in the cytoplasm; yields a little ATP without oxygen. *(T0)*
 
 **Helicase** — Enzyme that unzips the DNA double helix ahead of copying, opening the replication fork. *(T0)*
+
+**Hill function** — θ = [T]ⁿ/(Kⁿ + [T]ⁿ). Occupancy curve for cooperative binding; n (Hill coefficient) sets steepness. n = 1 is the ordinary single-site curve; larger n approaches an on/off switch. Seed of bistable switches in Theme 3. *(T0, T3)*
 
 **Hydration shell** — The layer of water molecules that surrounds a dissolved ion, oriented toward its charge. Strongly stabilizes the ion. *(T0)*
 
@@ -86,7 +100,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Induced fit** — An enzyme changes shape as it binds its substrate (Koshland). Refines lock-and-key. *(T0, T2)*
 
-**Intrinsically disordered protein** — A protein (or region) that has no single fixed fold. *(T2)*
+**Intrinsically disordered protein** — A protein (or region) that has no single fixed fold. Many transcription factors have such regions. *(T2)*
 
 **Intron** — Part of a gene's RNA that is cut out during splicing. *(T0, T1)*
 
@@ -106,7 +120,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Messenger RNA (mRNA)** — The processed RNA copy of a gene that leaves the nucleus and is translated by ribosomes. *(T0)*
 
-**Michaelis–Menten kinetics** — Standard model of enzyme rate: v = V_max[S] / (K_M + [S]). Rises with substrate, then saturates. *(T0, T3)*
+**Michaelis–Menten kinetics** — Standard model of enzyme rate: v = V_max[S] / (K_M + [S]). Rises with substrate, then saturates. Same functional form as single-site occupancy. *(T0, T3)*
 
 **Mismatch repair** — Enzymes that scan newly copied DNA and fix mispaired bases the polymerase missed. The third layer of copying accuracy. *(T0)*
 
@@ -118,6 +132,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Nucleus** — Membrane-bound compartment holding a eukaryote's DNA. Separates transcription from translation, enabling RNA processing. *(T0)*
 
+**Occupancy (θ)** — Fraction of time a binding site is bound. Single site: θ = [T]/([T] + K_d) = 1/(1 + K_d/[T]); in stat-mech terms, empty has weight 1, bound has weight [T]/K_d. θ = ½ exactly when [T] = K_d. A single site is a soft dimmer: 10% → 90% occupancy needs an 81-fold rise in [T]. [consensus] *(T0, T3)*
+
 **Okazaki fragment** — One of the short pieces in which the lagging strand is made; later joined by DNA ligase. *(T0)*
 
 **Phospholipid** — Membrane molecule with a charged/polar head and two hydrocarbon tails. *(T0)*
@@ -128,7 +144,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Prokaryote** — Cell with no nucleus: bacteria and archaea. *(T0)*
 
-**Promoter** — DNA region where RNA polymerase binds to start transcription. *(T0, T1)*
+**Promoter** — DNA region where RNA polymerase binds to start transcription. Its orientation sets the direction of transcription and so which strand is the template. *(T0, T1)*
 
 **Proofreading (polymerase)** — DNA polymerase backs up and cuts out a wrongly added base before continuing. Works because the chain's tip carries no energy supply, so removing a base leaves an ordinary 3′ end that can still extend. *(T0)*
 
@@ -138,6 +154,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Replication fork** — The Y-shaped region where the double helix is being unzipped and both strands copied. *(T0)*
 
+**Repressor** — A regulatory transcription factor that decreases transcription, classically by sitting on a site that overlaps the promoter so polymerase can't bind (e.g. the bacterial lac repressor). [consensus] *(T0, T1)*
+
 **Reverse complement** — A DNA strand's partner sequence: read the strand backward and swap each base (A↔T, G↔C). Follows from antiparallel pairing. *(T0)*
 
 **Ribosome** — Large RNA–protein machine that translates mRNA into protein. Its catalytic core is RNA (a ribozyme). *(T0)*
@@ -146,11 +164,15 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **RNA** — Ribonucleic acid. Usually single-stranded; uses U instead of T. Carries messages, does catalysis, regulates genes. *(T0, T1)*
 
-**RNA polymerase** — Enzyme that builds an RNA copy of a DNA strand. *(T0)*
+**RNA polymerase** — Enzyme that builds an RNA copy of a DNA strand. Reads the template 3′→5′ and builds RNA 5′→3′, so the RNA's growing 3′ end faces the direction of travel. Needs no primer; error rate much higher than DNA polymerase (~1 in 10⁴–10⁵), tolerable because RNA copies are many and short-lived. *(T0)*
+
+**RNA polymerase II (Pol II)** — The eukaryotic RNA polymerase that transcribes protein-coding genes (and many non-coding RNAs). Needs the general transcription factors to start. *(T0)*
 
 **RNA world hypothesis** — Early life used RNA for both information and catalysis before DNA and proteins. [research] — widely favored, unproven. *(T0)*
 
 **Semiconservative replication** — Each new DNA double helix has one old strand and one new strand. Meselson–Stahl, 1958. [consensus] *(T0)*
+
+**Sigma factor** — Bacterial protein that joins RNA polymerase and recognizes promoter sequences, positioning the polymerase; released once transcription is under way. [consensus] *(T0)*
 
 **Splice site** — Short signal sequences marking intron boundaries. Mutations here can cause intron retention or exon skipping. *(T0, T1)*
 
@@ -158,9 +180,17 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Substrate** — The molecule an enzyme acts on. *(T0)*
 
-**Transcription** — Making an RNA copy of a DNA sequence, by RNA polymerase, in the nucleus (in eukaryotes). *(T0)*
+**TATA box** — Short A/T-rich sequence about 25–30 bp upstream of the start site in some eukaryotic promoters (a minority in humans); bound by TATA-binding protein, part of the general transcription machinery. [consensus] *(T0)*
 
-**Transcription factor** — Protein that binds DNA and helps control whether a gene is transcribed. *(T0, T1)*
+**Template strand** — The DNA strand read by RNA polymerase; the RNA is complementary to it. Which strand serves as template is set by the promoter's orientation and can differ from gene to gene. [consensus] *(T0)*
+
+**Thermodynamic model (of gene regulation)** — Assumption that transcription rate is proportional to promoter/site occupancy computed at binding equilibrium. Widely used and often works, but real initiation has energy-consuming, non-equilibrium steps; where the model fails is studied actively. [research] *(T0, T3)*
+
+**Transcription** — Making an RNA copy of a DNA sequence, by RNA polymerase, in the nucleus (in eukaryotes). Opens both strands, reads one — so there is no lagging-strand problem. *(T0)*
+
+**Transcription bubble** — The short region (~10–15 bp) of unwound DNA that travels with RNA polymerase; the DNA rewinds behind it. A bubble, not a fork: only one strand is being copied. *(T0)*
+
+**Transcription factor** — Protein that binds DNA and helps control whether a gene is transcribed. Two kinds: *general* (needed at every promoter to seat polymerase) and *regulatory* (recognize specific short sequences, ~6–12 bp; activators or repressors). A gene's output depends on how often its regulatory sites are occupied (see occupancy). [consensus] Many have disordered regions and bind loosely, so "one factor, one site" is too tidy [Ball; developed in T2]. *(T0, T1)*
 
 **Transfer RNA (tRNA)** — Adapter RNA carrying one amino acid and recognizing the matching codon. *(T0)*
 
