@@ -1,16 +1,16 @@
 # How Life Works — Progress Log
 
-Last updated: 2026-11-08
+Last updated: 2026-11-10
 
-**How to use:** Start any session with "where were we?" Claude reads this log, gives one recall question from the last unit, and picks up at **Next up**. Sessions are short, one unit each; stopping mid-unit is fine.
+**How to use:** Start any session with "where were we?" Claude reads this log, gives one recall question from the last unit, and picks up at **Next up**. Sessions are short, one unit each; stopping mid-unit is fine. **End every session with a session-notes markdown file** (`sessions/YYYY-MM-DD-<unit>-<topic>.md`): content taught, diagrams as ASCII, checks with Fog's answers and feedback, terms introduced, next recall prompt with the answer in a collapsible `<details>` block. Quizzes are also delivered as saveable markdown, answers in `<details>`.
 
 ---
 
 ## Where we are
 
 - **Current theme:** Theme 0 — The standard picture
-- **Next up:** A4: The genetic code and translation (codons, tRNA, ribosome).
-- **Last recall prompt to use:** "Why can't the splice-site sequences alone pick out the real splice sites in a long gene?" (Target answer: each signal carries only ~8–9 bits, so chance matches occur about once every 2⁸ positions; their number grows with gene length, so a long gene has many cryptic sites that score as well as real ones; the signal can't tell them apart, and the cell uses additional context — splicing enhancers/silencers, exon definition, timing during transcription. Ask for the first clause unaided; watch for "external" instead of "additional/context.")
+- **Next up:** A5: protein folding and shape (side chains, Anfinsen, chaperones). Then the Block A quiz.
+- **Last recall prompt to use:** "Why does the ribosome's error rate come out near f₀² rather than f₀? Answer shape: name the energy-spending step, then say in one clause what its being irreversible forces." (Target answer: GTP hydrolysis between initial selection and proofreading; because it can't run backward, a wrong tRNA has to pass two independent checks, so the error fractions multiply.)
 
 ## Theme 0 units
 
@@ -20,8 +20,9 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 - ☑ A1. DNA structure and copying (base pairing, semiconservative replication, proofreading). Completed 2026-11-06: full causal chain for leading/lagging strands stated correctly.
 - ☑ A2. Transcription (RNA polymerase, promoters, transcription factors). Completed 2026-11-07: transcription direction stated precisely; K_d/occupancy chain stated correctly after step-by-step checks.
 - ☑ A3. RNA processing (splicing, introns/exons, alternative splicing). Completed 2026-11-08: information-shortfall chain and window-model chain both stated correctly after step-by-step checks.
-- ☐ A4. The genetic code and translation (codons, tRNA, ribosome)
+- ☑ A4. The genetic code and translation (codons, tRNA, ribosome). Chunk 1 (code, reading frames, tRNA + synthetases, editing) 2026-11-09; chunk 2 (ribosome) completed 2026-11-10: nonsense-codon chain stated correctly unaided.
 - ☐ A5. Protein folding and shape (side chains, Anfinsen, chaperones)
+- ☐ Block A quiz (A1–A5) after A5 — agreed 2026-11-09. Focus on the full DNA → protein chain (diagnostic main gap).
 
 ### Block B — Energy
 - ☐ B1. Free energy, equilibrium, and why life runs far from equilibrium
@@ -63,7 +64,9 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 - Direction words ("in the 3′ direction") get used loosely when two antiparallel molecules are involved. Ask which molecule.
 - A remembered fact ("small K_d = tight binding") doesn't automatically connect to a formula. Point to the defining property (K_d *is* the half-occupancy concentration) before asking.
 - New (2026-11-08): abbreviations and symbols introduced once (Pol II, ψ) don't carry over. Re-define at the point of use, especially inside a check question.
+- **Important (2026-11-09):** Fog often can't parse what an open check question wants (true with people too). Some logged "skips the why" was question ambiguity, not a gap. Every check question now states the *shape* of answer wanted ("name the cause in one clause," "rule out the other options," "give the chain A → B → C"). **Working (2026-11-10):** recall and the nonsense-codon check both answered in the requested shape, unaided.
 - New (2026-11-08): word precision — "replaced," "visible," "external" used where the mechanism needs "competitor appears," "unchallenged," "additional context." Mechanism right, wording loose.
+- New (2026-11-10): when asked why X *can't* be the cause, tends to say what X does do rather than what it fails to do. Minor; the logic is there.
 
 ## Open questions
 
@@ -83,9 +86,17 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 - **2026-11-07** — Recall (transcription direction): "only one strand is read" ✓ (word fixed); "in the 3′ direction" too vague — one-step check: RNA's growing 3′ end faces travel ✓. A2 chunk 3: regulatory transcription factors (activators, repressors, enhancers); occupancy θ = [T]/([T] + K_d) as a two-state partition function; same form as Michaelis–Menten; single site = soft dimmer; cooperativity → Hill function; thermodynamic-model caveat [research]; Ball on disordered, promiscuous factors (deferred to T2). Check (smaller K_d → lower half-occupancy concentration): stuck on open version; after pointing to K_d as the half-occupancy concentration, one-step checks ✓ ✓; added K_d = k_off/k_on; fill-in-the-blank ✓. A2 ☑. Glossary v3 (+16 terms, several entries updated).
 - **2026-11-07 (later)** — Recall (single site = dimmer, cooperativity sharpens): asked for smaller steps; three one-step checks ✓ ✓ ✓; fill-in-the-blank ✓.
 - **2026-11-08** — A3 chunk 1: cap, poly-A tail, splicing during transcription; splice signals (GU, AG, branch-point A); two-step lariat mechanism (diagram); spliceosome with RNA catalytic core; self-splicing introns as likely ancestor; information content of splice sites (~8–9 bits vs ~15 needed) → cryptic sites → enhancers/silencers, exon definition, timing. Check: unaided answer gave the conclusion ("can contain cryptic sites"), missed "many" and "can't tell apart"; one-step (doubling length doubles decoys) ✓; fill-in ✓, but "external" → corrected to "additional/context." A3 chunk 2: alternative splicing (cassette-exon diagram; patterns; Bcl-x, Dscam 38,016); functional-isoform dispute [research]; SR vs hnRNP competition; ψ = k_inc/(k_inc + k_skip); window-of-opportunity model P = 1 − e^(−kd/v) [research on generality]; Ball's "resource not program" reading and Claude's assessment (deferred to T3). Fog asked what "Pol II" meant (re-defined). Check: unaided answer got the window mechanism; corrected "replaced"/"visible"; ψ needed re-defining; then one-step completion ✓. A3 ☑. Glossary v4 (+20 terms, several entries updated).
+- **2026-11-09** — Recall (cryptic sites): "too few bits" and "multiple matches" unaided ✓; completion gave "not sufficient / other means" — corrected to "can't tell them apart" and named context (enhancers/silencers, exon definition, timing). A4 chunk 1: why triplets (4³ = 64; log₂20 ≈ 4.3 bits vs 6 bits → redundancy); 61 sense + 3 stop codons, AUG start; reading frames and frameshifts (Crick–Brenner 1961); tRNA adapter + synthetases (diagram); synthetase editing ("double sieve," Ile/Val) as kinetic proofreading; wobble; error-minimizing code arrangement (Freeland & Hurst 1998) and dispute over why [research]. Check (what fixes codon meaning): synthetase ✓, but answered what it does rather than why it decides. Fog flagged difficulty parsing what questions want → new rule: state the answer shape. One-step (pairing doesn't check the amino acid) ✓; fill-in ✓. Block A quiz scheduled after A5.
+- **2026-11-10** — Recall (what fixes codon meaning): synthetase ✓; second clause said what pairing checks rather than what it never checks — supplied the missing link with Chapeville 1962 (Cys→Ala on tRNA^Cys, alanine inserted). A4 chunk 2: ribosome subunits and A/P/E sites (diagram); initiation (cap scanning to first AUG in eukaryotes, Shine–Dalgarno in bacteria; sets the frame); elongation cycle (delivery, peptide bond by rRNA, translocation); N→C synthesis; energy accounting (ATP paid by the synthetase, GTP for movement and accuracy; contrast with DNA copying, where the tip carries no energy); two-stage selection separated by irreversible GTP hydrolysis, f ≈ f₀² [consensus], speed–accuracy tuning [research]; termination by release factors. Check (UGG→UGA mid-gene): release factor in A site → truncated protein released ✓ unaided; added nonsense-mediated decay. A4 ☑. Glossary v5 (+25 terms, several entries updated).
 
 ## Files
 
-- `glossary.md` — running glossary (v4, 2026-11-08)
+- `glossary.md` — running glossary (v5, 2026-11-10)
 - `progress.md` — this file
-- `sessions/2026-11-05-A1-dna-copying.md` — notes from the 2026-11-05 session
+- `sessions/2026-11-04-T0-diagnostic.md` — Theme 0 diagnostic, 2026-11-03/04 (rebuilt 11-10)
+- `sessions/2026-11-05-A1-dna-copying.md` — A1 start, 2026-11-05
+- `sessions/2026-11-06-A1-A2-lagging-strand-transcription.md` — A1 finish, A2 chunks 1–2 (rebuilt 11-10)
+- `sessions/2026-11-07-A2-transcription-factors-occupancy.md` — A2 chunk 3, plus the later recall (rebuilt 11-10)
+- `sessions/2026-11-08-A3-rna-processing-splicing.md` — A3 (rebuilt 11-10)
+- `sessions/2026-11-09-A4-genetic-code-trna.md` — A4 chunk 1 (rebuilt 11-10)
+- `sessions/2026-11-10-A4-translation-ribosome.md` — A4 chunk 2

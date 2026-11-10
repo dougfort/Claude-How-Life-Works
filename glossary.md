@@ -1,6 +1,6 @@
 # How Life Works — Glossary
 
-Last updated: 2026-11-08 · v4 · Covers: Theme 0 diagnostic, recall on membranes, A1 (DNA structure and copying), A2 (transcription), A3 (RNA processing)
+Last updated: 2026-11-10 · v5 · Covers: Theme 0 diagnostic, recall on membranes, A1 (DNA structure and copying), A2 (transcription), A3 (RNA processing), A4 (genetic code and translation)
 
 Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ball]** Ball's interpretive position · *(Tn)* theme where the term matters most
 
@@ -9,6 +9,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 **3′ end / 5′ end** — The two chemically different ends of a DNA or RNA strand, named after carbons in the sugar. The 5′ end has a free phosphate; the 3′ end has a free –OH. Every link in the backbone runs 3′-OH → 5′-phosphate, so a strand has a direction, like an arrow. New strands can grow only at the 3′ end ("synthesis runs 5′ → 3′"). [consensus] *(T0)*
 
 **5′ cap** — A modified G attached back-to-front to the 5′ end of pre-mRNA early in transcription. Protects the RNA's front end and helps the ribosome find it. [consensus] *(T0)*
+
+**A, P and E sites** — The three tRNA slots in the ribosome. **A** (aminoacyl): where the incoming loaded tRNA binds over the current codon. **P** (peptidyl): holds the tRNA carrying the growing chain. **E** (exit): where the emptied tRNA leaves. Each cycle the tRNAs shift A → P → E. [consensus] *(T0)*
 
 **Activation barrier (activation energy, ΔG‡)** — The energy hump a reaction must get over between starting molecules and products. Rate depends on it exponentially: k ∝ e^(−ΔG‡/k_BT). Enzymes lower it. *(T0)*
 
@@ -20,7 +22,11 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Amino acid** — The building block of proteins. There are 20 standard ones, differing in their side chains (oily, charged, polar). *(T0)*
 
+**Aminoacyl-tRNA synthetase** — Enzyme that attaches the correct amino acid to its tRNA, spending ATP; roughly one per amino acid. **This is the step that fixes what each codon means**: codon–anticodon pairing matches tRNA to codon but never checks the amino acid, so the ribosome inserts whatever is attached (Chapeville et al. 1962: cysteine on tRNA^Cys chemically converted to alanine → alanine inserted at cysteine codons). The ATP spent here also stores the energy later used to make the peptide bond. [consensus] *(T0)*
+
 **Anfinsen's principle** — A protein's amino-acid sequence determines its folded shape. [consensus] for many proteins, with caveats: some need chaperones, some never fold (see intrinsically disordered protein). *(T0, T2)*
+
+**Anticodon** — The three letters on a tRNA that pair (antiparallel) with a codon on the mRNA. *(T0)*
 
 **Antiparallel** — The two strands of DNA run in opposite chemical directions (labeled 5′→3′ and 3′→5′). Combined with polymerase's one-direction rule, this is what forces a lagging strand. *(T0)*
 
@@ -52,7 +58,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Coding strand** — The DNA strand *not* read during transcription. Its sequence matches the RNA's (with T in place of U), which is why gene sequences are conventionally written as the coding strand. [consensus] *(T0)*
 
-**Codon** — Three consecutive letters of mRNA, read by the ribosome as one unit. 4³ = 64 codons. *(T0)*
+**Codon** — Three consecutive letters of mRNA, read by the ribosome as one unit. 4³ = 64 codons: 61 specify amino acids, 3 are stop signals. *(T0)*
 
 **Cooperative binding** — Binding of one molecule makes binding of the next more likely (e.g. transcription factors that touch each other on adjacent sites). Turns the soft occupancy curve into a steep switch (see Hill function). [consensus] *(T0, T3)*
 
@@ -78,6 +84,10 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Electron transport chain** — Membrane proteins in mitochondria that pass electrons from food molecules to oxygen, using the energy to pump protons across the membrane. *(T0)*
 
+**Elongation (translation)** — The repeated cycle that adds one amino acid per codon: (1) a loaded tRNA is delivered to the A site; (2) the peptide bond forms, moving the whole chain onto the A-site tRNA; (3) translocation moves the ribosome one codon along. ~10–20 amino acids/s in bacteria, ~5/s in human cells. [consensus] *(T0)*
+
+**Elongation factors** — GTP-carrying proteins that run the elongation cycle: one escorts loaded tRNAs to the A site (EF-Tu in bacteria, eEF1A in eukaryotes); another drives translocation (EF-G / eEF2). [consensus] *(T0)*
+
 **Endosymbiosis** — One cell living inside another. Mitochondria descend from engulfed bacteria. [consensus] *(T0)*
 
 **Enhancer** — In eukaryotes, a DNA region bound by activators that can lie thousands of base pairs from the gene it controls; the DNA loops so the bound activators reach the promoter. [consensus] Not the same as a *splicing* enhancer (see splicing enhancer / silencer). *(T0, T1)*
@@ -90,13 +100,17 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Exon definition** — Because exons are short and introns long, the splicing machinery first recognizes an exon by pairing the splice sites on either side of it. One source of information beyond the splice sites themselves. [consensus] *(T0)*
 
+**Frameshift** — An insertion or deletion of a number of letters that isn't a multiple of 3, shifting the reading frame so every codon downstream is misread (usually hitting a stop soon). Crick–Brenner (1961) used frameshifts to show the code is read in triplets. [consensus] *(T0)*
+
 **Gene** — No single agreed definition. Molecular sense: a stretch of DNA that is transcribed into a functional product. Evolutionary sense: a unit inherited and selected over generations (Dawkins' usage). "A sequence that codes for a protein" is inaccurate: misses non-coding genes, alternative splicing, and regulatory DNA. [consensus that the simple definition fails] *(T1)*
 
 **General transcription factors** — In eukaryotes, the set of proteins needed at essentially every RNA polymerase II promoter to position the polymerase and open the DNA (TFIID, TFIIB and others). Contrast regulatory transcription factors, which vary gene to gene. [consensus] *(T0)*
 
-**Genetic code** — The many-to-one map from 64 codons to 20 amino acids plus stop. Redundant, and arranged so single-letter errors are often harmless. *(T0, T5)*
+**Genetic code** — The many-to-one map from 64 codons to 20 amino acids plus stop. Redundant (log₂20 ≈ 4.3 bits needed, 6 bits available), and arranged so single-letter errors often swap in a chemically similar amino acid (Freeland & Hurst 1998) [consensus that it is error-minimizing; why it ended up so is debated — research]. *(T0, T5)*
 
 **Glycolysis** — First stage of breaking down glucose, in the cytoplasm; yields a little ATP without oxygen. *(T0)*
+
+**GTP (guanosine triphosphate)** — ATP's close chemical relative. Used by translation factors; on the ribosome its hydrolysis is the irreversible step that separates the two accuracy checks (see kinetic proofreading). *(T0)*
 
 **Helicase** — Enzyme that unzips the DNA double helix ahead of copying, opening the replication fork. *(T0)*
 
@@ -110,9 +124,13 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Hydrophobic effect** — Nonpolar molecules cluster in water mainly because it frees water molecules from ordered cages — an entropy gain. Drives membrane formation and protein folding. *(T0)*
 
-**Induced fit** — An enzyme changes shape as it binds its substrate (Koshland). Refines lock-and-key. *(T0, T2)*
+**Induced fit** — An enzyme changes shape as it binds its substrate (Koshland). Refines lock-and-key. The ribosome's decoding site uses it too, sensing the geometry of codon–anticodon pairing. *(T0, T2)*
 
 **Information content (of a sequence motif)** — For a position weight matrix: I = Σᵢ (2 − Hᵢ) bits, Hᵢ = −Σ_b pᵢ(b) log₂ pᵢ(b). A fully fixed position gives 2 bits; a random one gives 0. Picking one site out of N positions needs ~log₂ N bits; with I bits, chance matches occur about N/2^I times. Human splice sites: ~8 bits (5′) and ~9 bits (3′) (Stephens & Schneider 1992) — well short of what a long gene needs. *(T0, T3)*
+
+**Initiation (translation)** — Getting the ribosome onto the right start codon. Eukaryotes: the small subunit with the initiator tRNA binds at the 5′ cap and scans to the first AUG. Bacteria: a Shine–Dalgarno sequence positions the ribosome directly. The large subunit then joins. Sets the reading frame. [consensus] *(T0)*
+
+**Initiator tRNA** — Special tRNA carrying methionine that begins every protein; it starts in the P site rather than entering at A. [consensus] *(T0)*
 
 **Intrinsically disordered protein** — A protein (or region) that has no single fixed fold. Many transcription factors have such regions. *(T2)*
 
@@ -122,7 +140,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Kinetic coupling ("window of opportunity" model)** — Because splicing happens during transcription, an exon with a weak site gets a window τ = d/v (distance to the competing site ÷ Pol II speed) to be recognized unchallenged. With recognition rate k: P(recognized) = 1 − e^(−kd/v). Slower Pol II → longer window → higher ψ. Supported for many exons; generality debated [research]. *(T1, T3)*
 
-**Kinetic proofreading** — Hopfield (1974). Copying machinery spends energy to recheck and reject errors, reaching accuracy beyond what binding energies allow. Equilibrium error f₀ ≈ e^(−ΔΔG/k_BT); n energy-consuming discrimination steps give roughly f₀ⁿ. Accuracy beyond the equilibrium limit costs energy (DNA copying ~1 error per 10⁹ bp). *(T0, T3)*
+**Kinetic proofreading** — Hopfield (1974). Copying machinery spends energy to recheck and reject errors, reaching accuracy beyond what binding energies allow. Equilibrium error f₀ ≈ e^(−ΔΔG/k_BT); n energy-consuming discrimination steps give roughly f₀ⁿ. Accuracy beyond the equilibrium limit costs energy. Examples: DNA copying (~1 error per 10⁹ bp with all layers), synthetase editing, and the ribosome's two-stage tRNA selection separated by irreversible GTP hydrolysis (f ≈ f₀², f₀ ~ 10⁻² → ~10⁻⁴). *(T0, T3)*
 
 **Lagging strand** — The new DNA strand whose growing 3′ end points away from the replication fork. It can't follow the fork, so it is made in backward pieces (Okazaki fragments). Cause: polymerase's 5′ → 3′ rule plus antiparallel strands — not "waiting for exposed template," which both strands do. [consensus] *(T0)*
 
@@ -144,11 +162,19 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Mismatch repair** — Enzymes that scan newly copied DNA and fix mispaired bases the polymerase missed. The third layer of copying accuracy. *(T0)*
 
+**Missense error** — A wrong amino acid inserted during translation. Ribosome rate roughly 1 in 10³–10⁴ per codon. [consensus] *(T0)*
+
 **Mitochondrion** — Eukaryotic organelle, descended from a bacterium, where most ATP is made via chemiosmosis. Lane argues mitochondria made complex cells possible by vastly raising energy per gene [research]. *(T0)*
 
 **Mutually exclusive exons** — A set of exons of which exactly one is included in each transcript. Fly Dscam has four such clusters: 12 × 48 × 33 × 2 = 38,016 combinations. [consensus] *(T1)*
 
+**N-terminus / C-terminus** — The two ends of a protein chain: the free amino group (N) and the free carboxyl group (C). Proteins are built N → C while the mRNA is read 5′ → 3′. [consensus] *(T0)*
+
 **Non-coding RNA** — RNA that functions as RNA and is never translated: tRNA, ribosomal RNA, microRNAs, long non-coding RNAs. *(T1)*
+
+**Nonsense mutation** — A change that turns an amino-acid codon into a stop codon inside a gene. A release factor binds there and the truncated protein is released. [consensus] *(T0)*
+
+**Nonsense-mediated decay** — Eukaryotic quality control that destroys mRNAs whose ribosomes stop too early (typically before the last exon–exon junction), so little truncated protein accumulates. [consensus] *(T0)*
 
 **Nucleotide** — Building block of DNA/RNA: a sugar, a phosphate, and one base (A, T/U, G, C). *(T0)*
 
@@ -158,11 +184,15 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Okazaki fragment** — One of the short pieces in which the lagging strand is made; later joined by DNA ligase. *(T0)*
 
+**Peptide bond** — The bond joining amino acids in a protein. On the ribosome, the chain on the P-site tRNA is transferred onto the amino acid of the A-site tRNA; catalyzed by ribosomal RNA. Its energy comes from the synthetase's earlier ATP spend, not from new ATP. [consensus] *(T0)*
+
 **Percent spliced in (ψ, PSI)** — The fraction of a gene's transcripts that include a given exon (70 of 100 → ψ = 0.7). Simple competition model: ψ = k_inc/(k_inc + k_skip), same form as occupancy. *(T1, T3)*
 
 **Phospholipid** — Membrane molecule with a charged/polar head and two hydrocarbon tails. *(T0)*
 
 **Poly-A tail** — A run of a couple hundred A's added to the 3′ end of pre-mRNA. Protects that end and helps export from the nucleus. [consensus] *(T0)*
+
+**Polysome** — One mRNA being translated by many ribosomes at once, spaced along it. *(T0)*
 
 **Position weight matrix** — A table of base probabilities pᵢ(b) at each position of a sequence signal; used to score candidate sites and compute information content. *(T0, T3)*
 
@@ -174,11 +204,15 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Promoter** — DNA region where RNA polymerase binds to start transcription. Its orientation sets the direction of transcription and so which strand is the template. *(T0, T1)*
 
-**Proofreading (polymerase)** — DNA polymerase backs up and cuts out a wrongly added base before continuing. Works because the chain's tip carries no energy supply, so removing a base leaves an ordinary 3′ end that can still extend. *(T0)*
+**Proofreading (polymerase)** — DNA polymerase backs up and cuts out a wrongly added base before continuing. Works because the chain's tip carries no energy supply, so removing a base leaves an ordinary 3′ end that can still extend. (Contrast the ribosome, where the energy sits on the chain's tip, so checking happens mainly *before* the bond forms.) *(T0)*
 
 **Protein** — A chain of amino acids that folds into a functional shape. *(T0)*
 
 **Proton gradient (proton-motive force)** — Difference in proton concentration and voltage across a membrane (~150–200 mV across ~5 nm in mitochondria); in mitochondria the voltage is the larger part. Powers ATP synthase. *(T0)*
+
+**Reading frame** — Which of the three possible ways of grouping letters into triplets is used. Set by the start codon; everything downstream is counted in threes from it. *(T0)*
+
+**Release factor** — Protein that recognizes a stop codon in the A site (no tRNA matches stop codons) and makes water cut the finished chain off the P-site tRNA. [consensus] *(T0)*
 
 **Replication fork** — The Y-shaped region where the double helix is being unzipped and both strands copied. *(T0)*
 
@@ -186,7 +220,7 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Reverse complement** — A DNA strand's partner sequence: read the strand backward and swap each base (A↔T, G↔C). Follows from antiparallel pairing. *(T0)*
 
-**Ribosome** — Large RNA–protein machine that translates mRNA into protein. Its catalytic core is RNA (a ribozyme). *(T0)*
+**Ribosome** — Large RNA–protein machine that translates mRNA into protein. Small subunit holds the mRNA and monitors codon–anticodon pairing; large subunit forms peptide bonds and has the A, P and E sites. Its catalytic core is RNA (a ribozyme). *(T0)*
 
 **Ribozyme** — An RNA molecule that acts as an enzyme. Examples: the ribosome's core, the spliceosome's core, self-splicing introns. *(T0)*
 
@@ -202,6 +236,8 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Semiconservative replication** — Each new DNA double helix has one old strand and one new strand. Meselson–Stahl, 1958. [consensus] *(T0)*
 
+**Shine–Dalgarno sequence** — Short bacterial mRNA sequence just upstream of the start codon that pairs with the ribosome's own RNA, positioning the ribosome without scanning. [consensus] *(T0)*
+
 **Sigma factor** — Bacterial protein that joins RNA polymerase and recognizes promoter sequences, positioning the polymerase; released once transcription is under way. [consensus] *(T0)*
 
 **Splice site** — Short signal sequences marking intron boundaries: GU at the intron's 5′ end (5′ splice site), AG at its 3′ end (3′ splice site). Carry only ~8–9 bits, so cryptic look-alikes are common. Mutations here can cause intron retention or exon skipping. *(T0, T1)*
@@ -214,11 +250,19 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **SR proteins** — RNA-binding proteins that typically bind splicing enhancers and promote exon inclusion. Compete with hnRNPs. [consensus] *(T1)*
 
+**Start codon** — AUG (methionine); marks where translation begins and sets the reading frame. [consensus] *(T0)*
+
+**Stop codon** — UAA, UAG, UGA. No tRNA matches them; a release factor binds instead and ends translation. [consensus] *(T0)*
+
 **Substrate** — The molecule an enzyme acts on. *(T0)*
+
+**Synthetase editing ("double sieve")** — Second check by aminoacyl-tRNA synthetases: a separate editing site cuts off wrong amino acids small enough to slip into the loading site (e.g. valine wrongly loaded onto tRNA^Ile). A form of kinetic proofreading. [consensus] *(T0)*
 
 **TATA box** — Short A/T-rich sequence about 25–30 bp upstream of the start site in some eukaryotic promoters (a minority in humans); bound by TATA-binding protein, part of the general transcription machinery. [consensus] *(T0)*
 
 **Template strand** — The DNA strand read by RNA polymerase; the RNA is complementary to it. Which strand serves as template is set by the promoter's orientation and can differ from gene to gene. [consensus] *(T0)*
+
+**Termination (translation)** — A stop codon reaches the A site, a release factor binds, the chain is cut free, and the subunits separate. [consensus] *(T0)*
 
 **Thermodynamic model (of gene regulation)** — Assumption that transcription rate is proportional to promoter/site occupancy computed at binding equilibrium. Widely used and often works, but real initiation has energy-consuming, non-equilibrium steps; where the model fails is studied actively. [research] *(T0, T3)*
 
@@ -228,10 +272,14 @@ Tags: **[consensus]** textbook view · **[research]** active, unsettled · **[Ba
 
 **Transcription factor** — Protein that binds DNA and helps control whether a gene is transcribed. Two kinds: *general* (needed at every promoter to seat polymerase) and *regulatory* (recognize specific short sequences, ~6–12 bp; activators or repressors). A gene's output depends on how often its regulatory sites are occupied (see occupancy). [consensus] Many have disordered regions and bind loosely, so "one factor, one site" is too tidy [Ball; developed in T2]. *(T0, T1)*
 
-**Transfer RNA (tRNA)** — Adapter RNA carrying one amino acid and recognizing the matching codon. *(T0)*
+**Transfer RNA (tRNA)** — Adapter RNA carrying one amino acid and recognizing the matching codon via its anticodon. Which amino acid it carries is set by its synthetase, not by the ribosome. *(T0)*
 
 **Transition state** — The unstable halfway configuration at the top of the activation barrier. Enzymes work by binding it more tightly than the substrate (Pauling). *(T0)*
 
-**Translation** — Building a protein from mRNA, by ribosomes, codon by codon. *(T0)*
+**Translation** — Building a protein from mRNA, by ribosomes, codon by codon, in three phases: initiation, elongation, termination. *(T0)*
+
+**Translocation** — The GTP-driven step that moves the ribosome exactly one codon along the mRNA, shifting tRNAs A → P → E and opening the A site for the next codon. [consensus] *(T0)*
 
 **Uncoupling** — Letting protons leak back across the membrane without passing through ATP synthase; food energy becomes heat instead of ATP. *(T0)*
+
+**Wobble** — Loose pairing at the codon's third position (Crick 1966), so one tRNA can read several codons that differ only there. Fewer tRNAs than the 61 sense codons are needed. [consensus] *(T0)*
