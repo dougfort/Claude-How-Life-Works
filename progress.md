@@ -1,6 +1,6 @@
 # How Life Works — Progress Log
 
-Last updated: 2026-11-13
+Last updated: 2026-11-17
 
 **How to use:** Start any session with "where were we?" Claude reads this log, gives one recall question from the last unit, and picks up at **Next up**. Sessions are short, one unit each; stopping mid-unit is fine. **End every session with a session-notes markdown file** (`sessions/YYYY-MM-DD-<unit>-<topic>.md`): content taught, diagrams as ASCII, checks with Fog's answers and feedback, terms introduced, next recall prompt with the answer in a collapsible `<details>` block. Quizzes are also delivered as saveable markdown, answers in `<details>`.
 
@@ -9,12 +9,14 @@ Last updated: 2026-11-13
 ## Where we are
 
 * **Current theme:** Theme 0 — The standard picture
-* **Next up:** Block A quiz (A1–A5) — the full DNA → protein chain, direct re-test of the diagnostic's main gap. Delivered 2026-11-13 as `block-a-quiz-2026-11-13.md`; not yet taken.
-* **Last recall prompt to use:** none queued — the quiz itself is the next recall event. After it: pick up Block B or C (both have units in progress — see below).
+* **Order for Blocks B/C (chosen 2026-11-16):** interleave — C1 → C2 → B1 → B2, then alternate through the rest of B and C.
+* **Next up:** C2 — Diffusion and random walks.
+* **Recall prompts to use next session:** two, both in `sessions/2026-11-16-C1-scale-and-numbers.md`: (1) C1 — why a stable protein's response time ≈ one cell cycle (chain: no degradation → only dilution → growth rate sets time); (2) Block A quiz Q1 — antiparallel → Okazaki fragments chain.
+* **Block A quiz:** skipped by Fog's choice 2026-11-16; stays saved. Fold its questions into recalls, one per session, until all key chains (esp. Q1, Q4, Q5, Q8, Q9) have been re-tested. Q1 queued next.
 
 ## Theme 0 units
 
-Status: ☐ not started · ◐ in progress / partly covered · ☑ done
+Status: ☐ not started · ◐ in progress / partly covered · ☑ done · ⊘ skipped
 
 ### Block A — Information: DNA → protein
 
@@ -22,8 +24,8 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 * ☑ A2. Transcription (RNA polymerase, promoters, transcription factors). Completed 2026-11-07: transcription direction stated precisely; K_d/occupancy chain stated correctly after step-by-step checks.
 * ☑ A3. RNA processing (splicing, introns/exons, alternative splicing). Completed 2026-11-08: information-shortfall chain and window-model chain both stated correctly after step-by-step checks.
 * ☑ A4. The genetic code and translation (codons, tRNA, ribosome). Chunk 1 (code, reading frames, tRNA + synthetases, editing) 2026-11-09; chunk 2 (ribosome) completed 2026-11-10: nonsense-codon chain stated correctly unaided.
-* ☑ A5. Protein folding and shape (side chains, Anfinsen, chaperones, misfolding, disordered proteins). Chunk 1 (chain and side chains, hydrophobic effect, two-state stability, Anfinsen, Levinthal and the funnel) 2026-11-11/12. Chunk 2 (chaperones, misfolding/aggregation, IDPs/IDRs + Ball) completed 2026-11-13: both recall and check answered correctly, including correctly flagging a genuine answer-shape ambiguity in the check question.
-* ☐ **Block A quiz (A1–A5)**, delivered 2026-11-13 as a standalone saveable file (`block-a-quiz-2026-11-13.md`), 11 questions, answers in `<details>`. Not yet taken — Fog to do it independently and bring results back.
+* ☑ A5. Protein folding and shape (side chains, Anfinsen, chaperones, misfolding, disordered proteins). Chunk 1 2026-11-11/12. Chunk 2 completed 2026-11-13: both recall and check answered correctly, including correctly flagging a genuine answer-shape ambiguity in the check question.
+* ⊘ **Block A quiz (A1–A5)**, `block-a-quiz-2026-11-13.md`, 11 questions. Skipped 2026-11-16 by choice; questions being folded into recalls instead.
 
 ### Block B — Energy
 
@@ -36,7 +38,7 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 
 ### Block C — Cells as physical objects
 
-* ◐ C1. Scale and numbers (sizes, counts, timescales)
+* ☑ C1. Scale and numbers (sizes, counts, timescales). Completed 2026-11-17: chunk 1 (sizes, counts, 1 molecule ≈ 1 nanomolar, surface-to-volume 3/r) — check answered after the question's hidden count→concentration step was made explicit; chunk 2 (timescales, degradation vs. dilution ODE) — check answered correctly unaided, in requested shape.
 * ☐ C2. Diffusion and random walks
 * ☐ C3. Crowding: what the inside of a cell is really like
 * ◐ C4. Membranes and transport (bilayers, channels, pumps). Bilayer impermeability now correct (desolvation, Born energy); channels and pumps not yet covered.
@@ -48,16 +50,16 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 
 ## Diagnostic results (2026-11-03 to 11-04)
 
-| # | Topic                   | Result                                                                                               |
-| - | ----------------------- | ---------------------------------------------------------------------------------------------------- |
-| 1 | Prokaryote vs eukaryote | Core fact right; missed why it matters                                                               |
-| 2 | Membranes               | Right instinct; "react" vs "interact" confused; check answer used wrong mechanism (charge repulsion) |
-| 3 | DNA structure           | Label right; missed copying mechanism                                                                |
-| 4 | DNA → protein           | Not recalled — **main gap**                                                                          |
-| 5 | Definition of a gene    | Right direction; conflated consensus facts with Ball's interpretation                                |
-| 6 | Proteins and catalysis  | Strongest answer; refined to transition-state binding                                                |
-| 7 | ATP and energy          | Currency ✓, storage ✗; energy source not known                                                       |
-| 8 | Scale and speed         | Size off by >10× (protein vs cell ≈ 4,000×); speed matched median enzyme only                        |
+| # | Topic                   | Result                                                                                                              |
+| - | ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 1 | Prokaryote vs eukaryote | Core fact right; missed why it matters                                                                              |
+| 2 | Membranes               | Right instinct; "react" vs "interact" confused; check answer used wrong mechanism (charge repulsion)                |
+| 3 | DNA structure           | Label right; missed copying mechanism                                                                               |
+| 4 | DNA → protein           | Not recalled — **main gap**                                                                                         |
+| 5 | Definition of a gene    | Right direction; conflated consensus facts with Ball's interpretation                                               |
+| 6 | Proteins and catalysis  | Strongest answer; refined to transition-state binding                                                               |
+| 7 | ATP and energy          | Currency ✓, storage ✗; energy source not known                                                                      |
+| 8 | Scale and speed         | Size off by >10× (protein vs cell ≈ 4,000×); speed matched median enzyme only. **Revisited in C1 (2026-11-16/17).** |
 
 **Patterns to watch:**
 
@@ -65,12 +67,12 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 * Standard biology sometimes attributed to Ball.
 * Mechanistic, physical reasoning is a strength.
 * Spatial questions posed only in words don't land. Draw first, then ask. Fog can say "draw it" at any time.
-* When stuck on a "why," smaller checks (yes/no, one-step) work better than open "explain in a sentence" prompts. Confirmed 2026-11-06, 11-07, 11-08, 11-12. Current approach: ask for the first clause unaided, then fall back to one-step checks and a fill-in-the-blank.
+* When stuck on a "why," smaller checks (yes/no, one-step) work better than open "explain in a sentence" prompts. Confirmed 2026-11-06, 11-07, 11-08, 11-12, 11-17. Current approach: ask for the first clause unaided, then fall back to one-step checks and a fill-in-the-blank.
 * Direction words ("in the 3′ direction") get used loosely when two antiparallel molecules are involved. Ask which molecule.
 * A remembered fact ("small K_d = tight binding") doesn't automatically connect to a formula. Point to the defining property (K_d _is_ the half-occupancy concentration) before asking.
-* New (2026-11-08): abbreviations and symbols introduced once (Pol II, ψ) don't carry over. Re-define at the point of use, especially inside a check question. **Recurred 2026-11-12:** RT used without definition; Fog asked. Define every symbol where it first appears, even ones standard in physics.
-* **Important (2026-11-09):** Fog often can't parse what an open check question wants (true with people too). Some logged "skips the why" was question ambiguity, not a gap. Every check question now states the _shape_ of answer wanted ("name the cause in one clause," "rule out the other options," "give the chain A → B → C"). **Working (2026-11-10):** recall and the nonsense-codon check both answered in the requested shape, unaided. **Caution (2026-11-12):** a stated shape isn't enough if a key phrase is loose. "A thing in the cell" admitted water; should have said "something a cell has that the test tube lacked." **Recurred constructively (2026-11-13):** Fog flagged a genuinely ambiguous check question himself (two valid readings of "what the chaperone changes") rather than guessing — treat this as the fallback working as intended, not a gap.
-* New (2026-11-08): word precision — "replaced," "visible," "external" used where the mechanism needs "competitor appears," "unchallenged," "additional context." Mechanism right, wording loose.
+* New (2026-11-08): abbreviations and symbols introduced once (Pol II, ψ) don't carry over. Re-define at the point of use, especially inside a check question. **Recurred 2026-11-12:** RT used without definition. **Recurred 2026-11-17:** units (nm, µm, fL, pL, nM, mM) used unexpanded; Fog asked for all to be spelled out and glossaried. **Rule now: spell out every unit and symbol at its first appearance in each session**, including standard SI units; give a unit key at the top of a chunk when several appear.
+* **Important (2026-11-09):** Fog often can't parse what an open check question wants (true with people too). Every check question now states the _shape_ of answer wanted. **Working (2026-11-10).** **Caution (2026-11-12):** a stated shape isn't enough if a key phrase is loose. **Recurred constructively (2026-11-13):** Fog flagged a genuinely ambiguous check question himself. **New failure mode (2026-11-17):** a check question that silently required an unstated conversion (10 molecules → 10 nanomolar) left Fog unable to see where the second quantity came from. **Rule: every quantity the answer uses must be stated in the question in the form it's compared in, or the conversion step must be named explicitly** ("first convert the count using the 1-molecule ≈ 1-nanomolar rule").
+* New (2026-11-08): word precision — "replaced," "visible," "external" used where the mechanism needs "competitor appears," "unchallenged," "additional context." Mechanism right, wording loose. (Minor recurrence 2026-11-17: "dilution removes X from the cell" — mechanism right; molecules are shared between daughters, not removed.)
 * New (2026-11-10): when asked why X _can't_ be the cause, tends to say what X does do rather than what it fails to do. Minor; the logic is there.
 * New (2026-11-11): a mechanism step gets stated without the property that makes it work ("forces a second check" without "independent"). Same family as "skips the why"; the fill-in fixed it at once.
 * New (2026-11-12): "where is the information" answered one level too far upstream (nucleotide rather than amino acid sequence). Ask what is physically present at the step in question.
@@ -84,27 +86,30 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 **Deferred threads (raised by Claude):**
 
 * Ball's broad claim that alternative splicing shows the gene is a "resource," not a "program." Assessment so far: the narrow claim ("one gene, one protein" is false) is consensus; the broad claim doesn't follow from splicing alone, since the alternatives and the splicing factors are themselves encoded. Revisit in Theme 3 (cell states as network attractors).
-* Ball on intrinsically disordered proteins as a challenge to "sequence → structure → function." Covered at the A5-appropriate level 2026-11-13 (settled phenomenon vs. Ball's stronger generalization); fuller treatment still due in Theme 2.
+* Ball on intrinsically disordered proteins as a challenge to "sequence → structure → function." Covered at the A5-appropriate level 2026-11-13; fuller treatment still due in Theme 2.
+* Low-copy-number noise (lac repressor bursts, Choi et al. 2008) — flagged in C1; develop in Theme 3.
+* Lane's surface-to-volume argument for why bacteria stay small — flagged in C1; test in B6.
 
 ## Session log
 
 * **2026-11-03 to 11-04** — Theme 0 diagnostic, 8 questions plus checks. Set session format: short, irregular sessions, no numerical computation in checks. Started glossary (v1, 61 terms) and this log.
 * **2026-11-05** — Recall (membranes): correct, right mechanism this time (loss of water shell). Added Born-energy formalization and the voltage part of the proton-motive force. Started A1: DNA structure, replication, accuracy and Hopfield proofreading; 5′/3′ directionality; leading vs lagging strands with an interactive fork diagram. Checks: "no lagging strand if strands were parallel" ✓; causal reason ✗ (attributed lag to waiting for exposed template, not to direction). A1 stays ◐. Session notes: `sessions/2026-11-05-A1-dna-copying.md`.
-* **2026-11-06** — Recall (lagging strand): first answer named "growing away from the fork" but still gave waiting as the cause. Static fork diagram, then one-step checks: 3′ end of new bottom piece is away from the fork ✓; it can only grow away from the fork ✓. Fill-in-the-blank: 3′ end only + antiparallel → growing end points away → can't extend into new template → segmented ✓. A1 ☑.
-* **2026-11-06 (later)** — Started A2. Covered: RNA polymerase reads one strand 5′→3′, template vs coding strand, small bubble not a fork, no primer, higher error rate and why that's tolerable; promoters set start and direction (sigma factor in bacteria; general transcription factors + Pol II in eukaryotes). Bubble diagram. Checks: "no lagging problem because it only opens one strand" — idea right, word wrong (opens both, reads one); one-step: RNA templated on the wrong strand would have 3′ end facing away ✓.
-* **2026-11-07** — Recall (transcription direction): "only one strand is read" ✓ (word fixed); "in the 3′ direction" too vague — one-step check: RNA's growing 3′ end faces travel ✓. A2 chunk 3: regulatory transcription factors (activators, repressors, enhancers); occupancy θ = \[T]/(\[T] + K_d) as a two-state partition function; same form as Michaelis–Menten; single site = soft dimmer; cooperativity → Hill function; thermodynamic-model caveat \[research]; Ball on disordered, promiscuous factors (deferred to T2). Check (smaller K_d → lower half-occupancy concentration): stuck on open version; after pointing to K_d as the half-occupancy concentration, one-step checks ✓ ✓; added K_d = k_off/k_on; fill-in-the-blank ✓. A2 ☑. Glossary v3 (+16 terms, several entries updated).
-* **2026-11-07 (later)** — Recall (single site = dimmer, cooperativity sharpens): asked for smaller steps; three one-step checks ✓ ✓ ✓; fill-in-the-blank ✓.
-* **2026-11-08** — A3 chunk 1: cap, poly-A tail, splicing during transcription; splice signals (GU, AG, branch-point A); two-step lariat mechanism (diagram); spliceosome with RNA catalytic core; self-splicing introns as likely ancestor; information content of splice sites (\~8–9 bits vs \~15 needed) → cryptic sites → enhancers/silencers, exon definition, timing. Check: unaided answer gave the conclusion ("can contain cryptic sites"), missed "many" and "can't tell apart"; one-step (doubling length doubles decoys) ✓; fill-in ✓, but "external" → corrected to "additional/context." A3 chunk 2: alternative splicing (cassette-exon diagram; patterns; Bcl-x, Dscam 38,016); functional-isoform dispute \[research]; SR vs hnRNP competition; ψ = k_inc/(k_inc + k_skip); window-of-opportunity model P = 1 − e^(−kd/v) \[research on generality]; Ball's "resource not program" reading and Claude's assessment (deferred to T3). Fog asked what "Pol II" meant (re-defined). Check: unaided answer got the window mechanism; corrected "replaced"/"visible"; ψ needed re-defining; then one-step completion ✓. A3 ☑. Glossary v4 (+20 terms, several entries updated).
-* **2026-11-09** — Recall (cryptic sites): "too few bits" and "multiple matches" unaided ✓; completion gave "not sufficient / other means" — corrected to "can't tell them apart" and named context (enhancers/silencers, exon definition, timing). A4 chunk 1: why triplets (4³ = 64; log₂20 ≈ 4.3 bits vs 6 bits → redundancy); 61 sense + 3 stop codons, AUG start; reading frames and frameshifts (Crick–Brenner 1961); tRNA adapter + synthetases (diagram); synthetase editing ("double sieve," Ile/Val) as kinetic proofreading; wobble; error-minimizing code arrangement (Freeland & Hurst 1998) and dispute over why \[research]. Check (what fixes codon meaning): synthetase ✓, but answered what it does rather than why it decides. Fog flagged difficulty parsing what questions want → new rule: state the answer shape. One-step (pairing doesn't check the amino acid) ✓; fill-in ✓. Block A quiz scheduled after A5.
-* **2026-11-10** — Recall (what fixes codon meaning): synthetase ✓; second clause said what pairing checks rather than what it never checks — supplied the missing link with Chapeville 1962 (Cys→Ala on tRNA^Cys, alanine inserted). A4 chunk 2: ribosome subunits and A/P/E sites (diagram); initiation (cap scanning to first AUG in eukaryotes, Shine–Dalgarno in bacteria; sets the frame); elongation cycle (delivery, peptide bond by rRNA, translocation); N→C synthesis; energy accounting (ATP paid by the synthetase, GTP for movement and accuracy; contrast with DNA copying, where the tip carries no energy); two-stage selection separated by irreversible GTP hydrolysis, f ≈ f₀² \[consensus], speed–accuracy tuning \[research]; termination by release factors. Check (UGG→UGA mid-gene): release factor in A site → truncated protein released ✓ unaided; added nonsense-mediated decay. A4 ☑. Glossary v5 (+25 terms, several entries updated).
-* **2026-11-11 to 11-12** — Recall (f₀²): GTP hydrolysis ✓; "forces a second check" missed independence → explained (reversible step would re-equilibrate and add nothing); fill-in (return / independent / multiply) ✓. A5 chunk 1: backbone, side chains (four groups), planar peptide bond, φ/ψ; hydrophobic effect driven mostly by water's entropy (link to C4); marginal stability (20–60 kJ/mol); two-state folding K = e^(−ΔG/RT), same form as A2 occupancy; Anfinsen 1961 ribonuclease and the scrambled-disulfide control; metastable exceptions (serpins, prions); AlphaFold/2024 Nobel rests on Anfinsen; Levinthal's paradox; folding funnel (diagram), minimal frustration, Zwanzig 1992 biased search; Ball on disordered proteins flagged for chunk 2. Fog asked what RT meant (defined: R·T, molar thermal energy, ≈ 2.6 kJ/mol at 310 K). Check (what Anfinsen rules out / where the information is): first answer "water cages / nucleotide sequence" ✗ (question wording let "water" in; nucleotide one step upstream); one-step checks ✓ ✓; fill-in (machinery / amino acid) ✓. A5 ◐. Session notes: `sessions/2026-11-11-A5-protein-folding-chunk1.md`.
-* **2026-11-13** — Recall (hydrophobic effect / water's entropy): correct unaided, full mechanism stated. A5 chunk 2: why folding needs help in vivo (crowding, co-translational folding); chaperones and chaperonins (kinetics, not shape information); misfolding/aggregation mechanism; amyloid and cross-β sheets; prions as the sharpest exception to strict Anfinsen; intrinsically disordered proteins/regions, coupled folding and binding, Ball's reading vs. the more cautious "necessary but not sufficient" consensus. Check (what a chaperone changes/doesn't change): Fog gave two valid framings (mechanism: shielding; outcome: rate/success) and correctly flagged the question's own ambiguity rather than guessing — both correct, no correction needed. A5 ☑ — **Block A (A1–A5) complete.** Glossary v6 (+26 terms: all of A5 chunk 1 and chunk 2, several added without duplicating existing peptide-bond/hydrophobic-effect entries). Session notes: `sessions/2026-11-13-A5-chunk2-chaperones-disorder.md`. Block A quiz (11 questions, A1–A5) delivered as standalone file `block-a-quiz-2026-11-13.md` for Fog to take independently.
+* **2026-11-06** — Recall (lagging strand): first answer named "growing away from the fork" but still gave waiting as the cause. Static fork diagram, then one-step checks ✓ ✓. Fill-in-the-blank ✓. A1 ☑.
+* **2026-11-06 (later)** — Started A2. RNA polymerase, template vs coding strand, bubble not fork, no primer, error rate; promoters (sigma factor; general TFs + Pol II). Checks: idea right, word wrong (opens both, reads one); one-step ✓.
+* **2026-11-07** — Recall (transcription direction) ✓ after one-step check. A2 chunk 3: regulatory TFs; occupancy θ = \[T]/(\[T] + K_d); Hill function; thermodynamic-model caveat \[research]; Ball on disordered factors (deferred to T2). Check (smaller K_d → lower half-occupancy concentration): stuck on open version; one-step checks ✓ ✓; fill-in ✓. A2 ☑. Glossary v3.
+* **2026-11-07 (later)** — Recall (single site = dimmer, cooperativity sharpens): three one-step checks ✓ ✓ ✓; fill-in ✓.
+* **2026-11-08** — A3 chunks 1–2: cap, poly-A, splicing mechanism, spliceosome, splice-site information content → cryptic sites → context; alternative splicing, ψ, window-of-opportunity model; Ball's "resource not program" and Claude's assessment (deferred to T3). Checks completed via one-step + fill-in. A3 ☑. Glossary v4.
+* **2026-11-09** — Recall (cryptic sites) ✓ with correction. A4 chunk 1: triplet code, reading frames, tRNA + synthetases, editing, wobble, error-minimizing code \[research]. Fog flagged difficulty parsing questions → rule: state the answer shape. Check ✓ after one-step + fill-in.
+* **2026-11-10** — Recall ✓ with missing link supplied (Chapeville 1962). A4 chunk 2: ribosome, initiation, elongation, energy accounting, two-stage selection f ≈ f₀², termination. Check (nonsense codon) ✓ unaided. A4 ☑. Glossary v5.
+* **2026-11-11 to 11-12** — Recall (f₀²) ✓ after fill-in on independence. A5 chunk 1: backbone, side chains, hydrophobic effect, marginal stability, two-state folding, Anfinsen, Levinthal, funnel. Fog asked what RT meant. Check ✗ then ✓ via one-step + fill-in. Session notes: `sessions/2026-11-11-A5-protein-folding-chunk1.md`.
+* **2026-11-13** — Recall ✓ unaided. A5 chunk 2: chaperones, misfolding, amyloid, prions, IDPs + Ball. Check: Fog flagged question ambiguity, both readings correct. A5 ☑ — **Block A complete.** Glossary v6. Session notes: `sessions/2026-11-13-A5-chunk2-chaperones-disorder.md`. Block A quiz delivered.
+* **2026-11-16 to 11-17** — Fog chose to skip the Block A quiz and interleave Blocks B/C (C1 → C2 → B1 → B2 …). **C1 chunk 1:** log ruler of sizes; protein vs. cell ≈ 4,000× (diagnostic Q8 gap); counts table (E. coli vs. human cell); N = c·V·N_A and the 1 molecule ≈ 1 nanomolar rule; noise at low copy number \[→ T3]; S/V = 3/r and Lane's argument flagged \[research, → B6]. Fog asked for all units to be spelled out → unit key given, glossary v7 with a Units and prefixes section. Check (lac repressor occupancy): Fog couldn't see where the second concentration came from — question hid a count→concentration conversion (question flaw); one-step checks "10" ✓, "more" ✓; θ = 10/11 ≈ 0.91 shown; fill-in ✓. Choi et al. 2008 bursts \[research]. **C1 chunk 2:** log ruler of timescales; enzyme turnover, transcription/translation speeds, mRNA/protein lifetimes \[Schwanhäusser 2011, research]; dp/dt = k − (α_deg + α_dil)p, steady state and response time; stable bacterial proteins respond in \~one cell cycle (Alon ch. 2); C2 diffusion preview (t ∝ L²). Check (stable protein, production stopped): "dilution; one cell cycle" ✓ unaided, in requested shape; wording refinement (copies shared between daughters, not removed). **C1 ☑.** Glossary v8 (time units, turnover number, half-life, dilution, degradation rate, response time). Session notes: `sessions/2026-11-16-C1-scale-and-numbers.md`.
 
 ## Files
 
-* `glossary.md` — running glossary (v6, 2026-11-13, 198 terms)
+* `glossary.md` — running glossary (v8, 2026-11-17, \~215 entries plus a Units and prefixes section)
 * `progress.md` — this file
-* `block-a-quiz-2026-11-13.md` — Block A quiz (A1–A5), 11 questions, answers in `<details>`
+* `block-a-quiz-2026-11-13.md` — Block A quiz (A1–A5), 11 questions, answers in `<details>`; skipped, questions folded into recalls
 * `sessions/2026-11-04-T0-diagnostic.md` — Theme 0 diagnostic, 2026-11-03/04 (rebuilt 11-10)
 * `sessions/2026-11-05-A1-dna-copying.md` — A1 start, 2026-11-05
 * `sessions/2026-11-06-A1-A2-lagging-strand-transcription.md` — A1 finish, A2 chunks 1–2 (rebuilt 11-10)
@@ -114,3 +119,4 @@ Status: ☐ not started · ◐ in progress / partly covered · ☑ done
 * `sessions/2026-11-10-A4-translation-ribosome.md` — A4 chunk 2
 * `sessions/2026-11-11-A5-protein-folding-chunk1.md` — A5 chunk 1, 2026-11-11/12
 * `sessions/2026-11-13-A5-chunk2-chaperones-disorder.md` — A5 chunk 2, 2026-11-13
+* `sessions/2026-11-16-C1-scale-and-numbers.md` — C1 (both chunks), 2026-11-16/17
